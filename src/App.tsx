@@ -60,7 +60,7 @@ export default function App() {
   }, [sortBtn])
 
   const onDelete = (id: number) => {
-    setTransactions(prev => prev.filter(t => t.id !== id))
+    setTransactions(prev => prev?.filter(t => t.id !== id))
   }
 
   const addTransaction = (formFields: TransactionFormType) => {
@@ -77,7 +77,7 @@ export default function App() {
     setTransactions(prev => [...prev, newTransaction])
   }
 
-  const filteredByType = transactions.filter(t => {
+  const filteredByType = transactions?.filter(t => {
 
     if (filterBtn === "Expense") {
       return t.type === "expense"
@@ -89,7 +89,7 @@ export default function App() {
   })
 
   const filteredTransactions = useMemo(() => {
-  return filteredByType.filter(t => t.title.toLowerCase().includes(searchTerm.toLowerCase()))
+  return filteredByType?.filter(t => t.title.toLowerCase().includes(searchTerm.toLowerCase()))
 }, [searchTerm, transactions, filterBtn])
 
 
