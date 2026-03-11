@@ -1,6 +1,7 @@
 import React, { useState } from 'react'
 import type { Transaction } from '../types/transaction'
 
+
 type EditType = {
 	transaction: Transaction
 	onSave: (t: Transaction) => void

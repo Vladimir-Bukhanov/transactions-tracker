@@ -3,6 +3,7 @@ import { ModalContext } from '../context/ModalContext'
 import type { TransactionFormType } from '../types/transaction'
 
 
+
 const initialFields: TransactionFormType = {
 	title: '',
 	amount: '',

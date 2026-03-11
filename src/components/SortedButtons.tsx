@@ -2,6 +2,7 @@ import { useContext } from 'react'
 import { ThemeContext } from '../context/ThemeContext'
 import type { SortType } from '../types/sortType'
 
+
 interface ISort {
 	current: SortType
 	onSorted: (item: SortType) => void

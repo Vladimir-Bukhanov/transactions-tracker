@@ -3,6 +3,7 @@ import { FaLongArrowAltDown, FaLongArrowAltUp, FaRegTrashAlt } from "react-icons
 import { ThemeContext } from '../context/ThemeContext'
 import type { Transaction } from '../types/transaction'
 
+
 interface ITransactionItem {
 	item: Transaction
 	onDelete: (id: number) => void

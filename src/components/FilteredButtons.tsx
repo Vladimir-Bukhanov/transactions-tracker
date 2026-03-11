@@ -2,6 +2,8 @@ import { useContext } from 'react'
 import { ThemeContext } from '../context/ThemeContext'
 import type { FilterType } from '../types/filterType'
 
+
+
 interface IFilter {
 	current: FilterType
 	onChange: (item: FilterType) => void

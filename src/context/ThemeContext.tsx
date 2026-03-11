@@ -2,6 +2,7 @@ import { createContext, useEffect, useState } from 'react'
 import type { Theme } from '../types/theme'
 
 
+
 interface IThemeContext {
 	theme: Theme
 	toggleTheme: () =>  void
