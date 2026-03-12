@@ -95,7 +95,7 @@ export default function App() {
 
   const sortedTransactions = useMemo(() => (
 
-    [...filteredTransactions].sort((a, b) => {
+    [...filteredTransactions]?.sort((a, b) => {
     if (sortBtn === "alphabet") {
       return a.title.localeCompare(b.title)
     } else if (sortBtn === "price") {
