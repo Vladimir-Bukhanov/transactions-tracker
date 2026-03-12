@@ -22,6 +22,7 @@ export default function App() {
       const parsed = JSON.parse(saved) 
       return parsed.length > 0 ? parsed : []
     }
+    return []
   })
 
   const [searchTerm, setSearchTerm] = useState<string>('')
